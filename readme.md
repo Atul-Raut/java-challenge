@@ -43,10 +43,33 @@ Application (with the embedded H2 database) is ready to be used ! You can access
 - Is the application running as expected
 - No performance issues
 
+#### Modifications implemented by me
+- Use Spring's validation annotations (@Valid, @NotBlank, @NotNull, etc.) and Spring Boot's error handling to validate incoming data and provide meaningful error responses.
+- Implemented custom exception handlers to return consistent error responses (e.g., using @ControllerAdvice and @ExceptionHandler).
+- Enable caching using Spring's caching annotations
+- Use profiles to manage different configurations for development, testing, and production environments.
+- Define response DTOs (Data Transfer Objects) to encapsulate data exchanged between the client and the service.
+- Configure logging using Spring Boot's built-in support for various logging frameworks and used Spring Aspect
+- Implemented comprehensive test cases using JUnit for rigorous code validation and quality assurance.
+- Updated Swagger/OpenAPI documentation
+- Include Actuator for monitoring and managing your application.
+
+#### We can implemented
+- Might consider OAuth2 or JWT-based authentication, depending on your requirements.
+- When requests originate from any web screen, we have the capability to validate both the request headers and session ID in accordance with the specified requirements.
+
+#### Test Report
+[Test Report](https://github.com/Atul-Raut/java-challenge/tree/main/TestResult/TestResult.html)
+
 #### Your experience in Java
 
 Please let us know more about your Java experience in a few sentences. For example:
 
-- I have 3 years experience in Java and I started to use Spring Boot from last year
-- I'm a beginner and just recently learned Spring Boot
-- I know Spring Boot very well and have been using it for many years
+- I boast a solid decade of hands-on experience in Java, encompassing a wide range of projects and challenges.
+- My journey with Spring Boot commenced three years ago, during which I've consistently expanded my proficiency in this versatile framework.
+- Spring Boot has become an integral part of my toolkit over the past three years, featuring prominently in numerous applications I've contributed to throughout my career.
+
+#### Repository Link
+
+[GitHub Repository Link](https://github.com/Atul-Raut/java-challenge)
+
