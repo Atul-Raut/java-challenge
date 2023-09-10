@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DeleteEmployeeTest" project="api-demo" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="jp.co.axa.apidemo.employee.DeleteEmployeeTest" time="0.512" displayname="DeleteEmployeeTest" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.DeleteEmployeeTest]">
+    <testcase name="TC3_testEmployeeIDValidation1" classname="jp.co.axa.apidemo.employee.DeleteEmployeeTest" time="0.373" displayname="TC3_testEmployeeIDValidation1()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.DeleteEmployeeTest]/[method:TC3_testEmployeeIDValidation1()]"/>
+    <testcase name="TC1_testDeleteEmployee" classname="jp.co.axa.apidemo.employee.DeleteEmployeeTest" time="0.114" displayname="TC1_testDeleteEmployee()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.DeleteEmployeeTest]/[method:TC1_testDeleteEmployee()]"/>
+    <testcase name="TC4_testEmployeeIDNull" classname="jp.co.axa.apidemo.employee.DeleteEmployeeTest" time="0.011" displayname="TC4_testEmployeeIDNull()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.DeleteEmployeeTest]/[method:TC4_testEmployeeIDNull()]"/>
+    <testcase name="TC2_testNoEmployee" classname="jp.co.axa.apidemo.employee.DeleteEmployeeTest" time="0.014" displayname="TC2_testNoEmployee()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.DeleteEmployeeTest]/[method:TC2_testNoEmployee()]"/>
+  </testsuite>
+</testrun>

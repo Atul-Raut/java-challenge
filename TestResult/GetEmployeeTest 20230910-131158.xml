@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GetEmployeeTest" project="api-demo" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="jp.co.axa.apidemo.employee.GetEmployeeTest" time="0.521" displayname="GetEmployeeTest" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.GetEmployeeTest]">
+    <testcase name="TC1_testNoEmployee" classname="jp.co.axa.apidemo.employee.GetEmployeeTest" time="0.43" displayname="TC1_testNoEmployee()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.GetEmployeeTest]/[method:TC1_testNoEmployee()]"/>
+    <testcase name="TC2_testEmployee" classname="jp.co.axa.apidemo.employee.GetEmployeeTest" time="0.091" displayname="TC2_testEmployee()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.GetEmployeeTest]/[method:TC2_testEmployee()]"/>
+  </testsuite>
+</testrun>

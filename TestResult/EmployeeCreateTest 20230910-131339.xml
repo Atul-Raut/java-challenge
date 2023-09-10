@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeCreateTest" project="api-demo" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="jp.co.axa.apidemo.employee.EmployeeCreateTest" time="0.536" displayname="EmployeeCreateTest" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.EmployeeCreateTest]">
+    <testcase name="TC1_testCreateNewEmployee" classname="jp.co.axa.apidemo.employee.EmployeeCreateTest" time="0.468" displayname="TC1_testCreateNewEmployee()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.EmployeeCreateTest]/[method:TC1_testCreateNewEmployee()]"/>
+    <testcase name="TC7_testNoDepartment" classname="jp.co.axa.apidemo.employee.EmployeeCreateTest" time="0.02" displayname="TC7_testNoDepartment()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.EmployeeCreateTest]/[method:TC7_testNoDepartment()]"/>
+    <testcase name="TC2_testNoEmployeeDetails" classname="jp.co.axa.apidemo.employee.EmployeeCreateTest" time="0.009" displayname="TC2_testNoEmployeeDetails()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.EmployeeCreateTest]/[method:TC2_testNoEmployeeDetails()]"/>
+    <testcase name="TC6_testSalaryLessThan1" classname="jp.co.axa.apidemo.employee.EmployeeCreateTest" time="0.008" displayname="TC6_testSalaryLessThan1()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.EmployeeCreateTest]/[method:TC6_testSalaryLessThan1()]"/>
+    <testcase name="TC3_testNoValidInputJson" classname="jp.co.axa.apidemo.employee.EmployeeCreateTest" time="0.01" displayname="TC3_testNoValidInputJson()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.EmployeeCreateTest]/[method:TC3_testNoValidInputJson()]"/>
+    <testcase name="TC5_testNoSalary" classname="jp.co.axa.apidemo.employee.EmployeeCreateTest" time="0.008" displayname="TC5_testNoSalary()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.EmployeeCreateTest]/[method:TC5_testNoSalary()]"/>
+    <testcase name="TC4_testNoEmployee" classname="jp.co.axa.apidemo.employee.EmployeeCreateTest" time="0.013" displayname="TC4_testNoEmployee()" uniqueid="[engine:junit-jupiter]/[class:jp.co.axa.apidemo.employee.EmployeeCreateTest]/[method:TC4_testNoEmployee()]"/>
+  </testsuite>
+</testrun>
