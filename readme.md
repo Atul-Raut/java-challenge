@@ -59,7 +59,7 @@ Application (with the embedded H2 database) is ready to be used ! You can access
 - When requests originate from any web screen, we have the capability to validate both the request headers and session ID in accordance with the specified requirements.
 
 #### Test Report
-[Test Report](https://github.com/Atul-Raut/java-challenge/tree/main/TestResult/TestResult.html)
+[Test Results Homepage](TestResult/TestResult.html)
 
 #### Your experience in Java
 
