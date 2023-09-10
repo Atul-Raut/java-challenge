@@ -66,7 +66,7 @@ public class AppUtils {
 			e.printStackTrace();
 		}
 		logger.error("Sending Error Response : " + output);
-		return new ResponseEntity<Object>(output, status);
+		return new ResponseEntity<Object>(response, status);
 	}
 	
 	/**
@@ -90,7 +90,7 @@ public class AppUtils {
 		}
 		
 		logger.error("Sending Success Response : " + output);
-		return new ResponseEntity<Object>(output, HttpStatus.OK);
+		return new ResponseEntity<Object>(successResponse, HttpStatus.OK);
 	}
 	
 	/**

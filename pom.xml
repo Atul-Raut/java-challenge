@@ -85,7 +85,33 @@
 		    <artifactId>commons-lang3</artifactId>
 		    <version>3.13.0</version>
 		</dependency>
-				
+		
+		<!-- Added by Atul on 20230908 for actuator start -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- Added by Atul on 20230908 for actuator end -->
+		<!-- Added by Atul on 20230908 for testing start -->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <scope>test</scope>
+		</dependency>
+		<!-- Added by Atul on 20230908 for testing end -->
+		<!-- Added by Atul on 20230908 for documentation start -->
+		<!-- Springfox Swagger2 for API documentation -->
+	    <!-- <dependency>
+	        <groupId>io.springfox</groupId>
+	        <artifactId>springfox-boot-starter</artifactId>
+	        <version>3.0.0</version>
+	    </dependency> -->
+	    <dependency>
+		  <groupId>io.springfox</groupId>
+		  <artifactId>springfox-swagger2</artifactId>
+		  <version>2.9.2</version>
+		</dependency>
+		<!-- Added by Atul on 20230908 for documentation end -->
     </dependencies>
 
 

@@ -2,10 +2,17 @@ package jp.co.axa.apidemo.responses;
 
 import java.util.List;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(description = "Api error response")
 public class ErrorResponse{
 
+	@ApiModelProperty(value = "Error code indicating the specific error.")
 	private String code;       // Error code indicating the specific error.
+	@ApiModelProperty(value = "A message describing the error.")
     private String message;    // A message describing the error.
+	@ApiModelProperty(value = "A list of error details or messages.")
     private List<String> errors; // A list of error details or messages.
 
     /**

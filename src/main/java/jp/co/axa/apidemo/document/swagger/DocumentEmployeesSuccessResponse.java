@@ -1,17 +1,20 @@
-package jp.co.axa.apidemo.responses;
+package jp.co.axa.apidemo.document.swagger;
+
+import java.util.List;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import jp.co.axa.apidemo.entities.Employee;
 
-@ApiModel(description = "Api success response")
-public class SuccessResponse{
+@ApiModel(description = "Api response")
+public class DocumentEmployeesSuccessResponse{
 
 	@ApiModelProperty(value = "Response code indicating success or a specific status.")
 	private String code;       // Response code indicating success or a specific status.
 	@ApiModelProperty(value = "A message describing the success or result of the operation.")
     private String message;    // A message describing the success or result of the operation.
 	@ApiModelProperty(value = "The actual response data.")
-    private Object response;   // The actual response data.
+    private List<Employee> response;   // The actual response data.
 
     /**
      * Constructs a new SuccessResponse with the provided code, message, and response data.
@@ -20,7 +23,7 @@ public class SuccessResponse{
      * @param message A message describing the success or result.
      * @param response The actual response data.
      */
-    public SuccessResponse(String code, String message, Object response) {
+    public DocumentEmployeesSuccessResponse(String code, String message, List<Employee> response) {
         this.code = code;
         this.message = message;
         this.response = response;
@@ -67,7 +70,7 @@ public class SuccessResponse{
      *
      * @return The response data.
      */
-    public Object getResponse() {
+    public List<Employee> getResponse() {
         return response;
     }
 
@@ -76,7 +79,7 @@ public class SuccessResponse{
      *
      * @param response The response data to set.
      */
-    public void setResponse(Object response) {
+    public void setResponse(List<Employee> response) {
         this.response = response;
     }
 

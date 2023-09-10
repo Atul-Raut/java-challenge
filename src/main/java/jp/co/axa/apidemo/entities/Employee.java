@@ -19,7 +19,7 @@ public class Employee {
 
 	@Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    private Long id =0l;
 
     // Employee's name
     @NotBlank(groups = {AddEmployee.class}, message = "Employee name cannot be null.")
@@ -29,7 +29,7 @@ public class Employee {
     // Employee's salary
     @Positive(groups = {AddEmployee.class}, message = "Salary must be a positive number")
     @Column(name="EMPLOYEE_SALARY")
-    private Integer salary;
+    private Integer salary = 0;
 
     // Employee's department
     @NotBlank(groups = {AddEmployee.class}, message = "Department cannot be null")

@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -58,6 +59,23 @@ public class RestExceptionHandler {
     @ExceptionHandler(MethodArgumentTypeMismatchException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseEntity<Object> handleValidationErrors(MethodArgumentTypeMismatchException ex) {
+        logger.error(CommonConstants.MSG_ERR_INVALID_PARAMETER, ex);
+        // Create error response object
+        ErrorResponse errorResponse = new ErrorResponse(CommonConstants.CODE_ERR_VALIDATION,
+                CommonConstants.MSG_ERR_INVALID_PARAMETER, null);
+        return AppUtils.createErrorResponse(errorResponse, HttpStatus.BAD_REQUEST);
+    }
+    
+    /**
+     * Exception handler method for handling invalid input JSON errors, triggered by the HttpMessageNotReadableException.
+     * This method returns a ResponseEntity containing an error response object with a BAD_REQUEST (400) HTTP status code.
+     *
+     * @param ex The HttpMessageNotReadableException representing the error.
+     * @return A ResponseEntity containing an error response object with BAD_REQUEST status.
+     */
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ResponseEntity<Object> handleInvaliedInputJsonErrors(HttpMessageNotReadableException ex) {
         logger.error(CommonConstants.MSG_ERR_INVALID_PARAMETER, ex);
         // Create error response object
         ErrorResponse errorResponse = new ErrorResponse(CommonConstants.CODE_ERR_VALIDATION,
